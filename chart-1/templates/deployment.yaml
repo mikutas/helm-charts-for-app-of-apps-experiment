@@ -38,9 +38,13 @@ spec:
               containerPort: 80
               protocol: TCP
           livenessProbe:
-            httpGet:
-              path: /
-              port: http
+            exec:
+              command:
+              - sleep
+              - "120"
+            # httpGet:
+            #   path: /
+            #   port: http
           readinessProbe:
             httpGet:
               path: /
