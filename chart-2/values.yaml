@@ -80,3 +80,7 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+jobNameSuffix: hoge
+command: sleep
+argument: "10"
