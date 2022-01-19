@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: test-{{ .Values.jobNameSuffix }}
+  name: test-{{ .Values.jobNameSuffix }}-foo
 spec:
   template:
     spec:
