@@ -8,6 +8,6 @@ spec:
       containers:
       - name: run-command
         image: alpine
-        command: ["exit",  "1"]
+        command: ["{{ .Values.command }}",  "{{ .Values.argument }}"]
       restartPolicy: Never
   backoffLimit: 4
